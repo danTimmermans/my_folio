@@ -10,4 +10,65 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
 }
 
+#typeWriter{
 
+    padding:  0 3em 0 3em;
+    span, p{
+        color: color("exclusive-blue");
+    }
+    span{
+        font-size: 150px;
+        margin: 0;
+    }
+    .title{
+        display: grid;
+        grid-template-columns:100px 200px;
+        align-items: end;
+        #reativity{
+            display: flex;
+            p{
+                grid-column: 2 /3;
+                margin-bottom: 30px;
+                font-size: 50px;
+            }
+        }
+    
+    }
+    .titlePartTwo{
+        display: grid;
+        grid-template-columns:100px 20px 100px;
+        align-items: end;
+        #bigO {
+            display: flex;
+            p{
+                margin-bottom: 30px;
+                font-size: 50px;
+            }
+        }
+        #bigOtwo{
+            p{
+                margin-bottom: 30px;
+                font-size: 50px;
+            }
+        }
+    }
+    .titlePartThree{
+        display: grid;
+        grid-template-columns:70px 90px 90px 100px;
+        align-items: end;
+        #bor{
+            display: flex;
+            p{
+                margin-bottom: 30px;
+                font-size: 50px;
+            }
+        }
+        #rs{
+            display: flex;
+            p{
+                margin-bottom: 30px;
+                font-size: 50px;
+            }
+        }
+    }
+}
