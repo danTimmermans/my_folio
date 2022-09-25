@@ -1,5 +1,6 @@
 body{
     font-family: $body-font;
+    overflow-x: hidden;
     font: {
         size: map-get($font-sizes , "md" );
     };
@@ -17,7 +18,6 @@ main{
  height: 100vh - $headerHeight;
 }
 #typeWriter{
-
     padding:  0 3em 0 3em;
     span, p{
         color: color("exclusive-blue");
