@@ -26,10 +26,16 @@ main{
         font-size: 150px;
         margin: 0;
     }
+    .underline{
+        height: .8px;
+        background: color("exclusive-blue");
+        position: absolute;
+    }
     .title{
         display: grid;
         grid-template-columns:100px 200px;
         align-items: end;
+        position: relative;
         #reativity{
             display: flex;
             p{
@@ -38,12 +44,30 @@ main{
                 font-size: 50px;
             }
         }
-    
+        .underlineTitle{
+            position: absolute;
+            left: 100px;
+            bottom: 33px;
+            width: 150px;
+            animation-delay: 3200ms;
+            animation-duration: 2s;
+            animation-name: underlineSlide;
+            animation-fill-mode: both;
+        }
+        @keyframes underlineSlide {
+            from {
+                width: 0px;
+            }
+            to {
+                width: 150px;
+            }
+        }
     }
     .titlePartTwo{
         display: grid;
         grid-template-columns:100px 20px 100px;
         align-items: end;
+        position: relative;
         #bigO {
             display: flex;
             p{
@@ -57,11 +81,29 @@ main{
                 font-size: 50px;
             }
         }
+        .underlineHas{
+            left: 0px;
+            bottom: 33px;
+            width: 125px;
+            animation-delay: 4100ms;
+            animation-duration: 2s;
+            animation-name: underlineSlideTwo;
+            animation-fill-mode: both;
+        }
+        @keyframes underlineSlideTwo {
+            from {
+                width: 0px;
+            }
+            to {
+                width: 125px;
+            }
+        }
     }
     .titlePartThree{
         display: grid;
         grid-template-columns:70px 90px 90px 100px;
         align-items: end;
+        position: relative;
         #bor{
             display: flex;
             p{
@@ -75,6 +117,40 @@ main{
                 margin-bottom: 30px;
                 font-size: 50px;
             }
+        }
+        .underlineBor{
+            left: 0px;
+            bottom: 35px;
+            width: 78px;
+            animation-delay: 5900ms;
+            animation-duration: 2s;
+            animation-name: underlineSlideThree;
+            animation-fill-mode: both;
+        }
+        .underlineRs{
+            left: 253px;
+            bottom: 35px;
+            width: 50px;
+            animation-delay: 6800ms;
+            animation-duration: 2s;
+            animation-name: underlineSlideFour;
+            animation-fill-mode: both;
+        }
+        @keyframes underlineSlideThree {
+            from {
+                width: 0px;
+            }
+            to {
+                width: 78px;
+            }
+        }
+        @keyframes underlineSlideFour {
+            from {
+                width: 0px;
+            }
+            to {
+                width: 50px;
+            } 
         }
     }
 }
