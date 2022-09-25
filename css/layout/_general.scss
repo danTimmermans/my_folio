@@ -3,13 +3,19 @@ body{
     font: {
         size: map-get($font-sizes , "md" );
     };
-    color: color("dark");
-    background-color: color("black-pearl");
+    background-image: url('../img/low-poly-grid-haikei (1).svg') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // background-image: url('../img/low-poly-grid-haikei.svg') ;
+    // background-repeat: no-repeat;
+    // background-size: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
 }
-
+main{
+ height: 100vh - $headerHeight;
+}
 #typeWriter{
 
     padding:  0 3em 0 3em;
