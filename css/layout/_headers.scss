@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     @include media-breakpoint-down("lg"){
-        height: 20vh;
+        height: 22vh;
     }
     .name{
         display: grid;
