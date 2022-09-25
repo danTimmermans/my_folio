@@ -6,6 +6,9 @@
     grid-template-columns:  1fr 100px;
     align-items: center;
     justify-content: space-between;
+    @include media-breakpoint-down("lg"){
+        height: 20vh;
+    }
     .name{
         display: grid;
         grid-template-columns: 130px 1fr;
