@@ -1,6 +1,10 @@
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: $body-font;
     overflow-x: hidden;
+    position: relative;
     font: {
         size: map-get($font-sizes , "md" );
     };
