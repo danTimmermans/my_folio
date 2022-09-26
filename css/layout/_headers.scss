@@ -11,19 +11,21 @@
     }
     .name{
         display: grid;
-        grid-template-columns: 130px 1fr;
+        grid-template-columns: 1fr;
         align-items: center;
-        svg{
-            width: 150px;
-        }
+
+        // svg{
+        //     width: 150px;
+        // }
         .logo{
-            grid-column: 2 / 3;
+            // grid-column: 2 / 3;
             display: grid;
             grid-template-rows: 1fr 1fr;
+            padding-left: 3em;
         }
         a, p{
             color: color("exclusive-blue");
-            letter-spacing: .2em;
+            letter-spacing: .3em;
         }
         a{
             // grid-column: 2 / 3;
@@ -35,7 +37,7 @@
             // grid-column: 2 / 3;
             grid-row: 2 / 3;
             align-self: start;
-            margin-top: .5em;
+            margin-top: 0;
         }
     }
     .container-corner {
