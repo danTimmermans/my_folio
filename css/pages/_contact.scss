@@ -1,7 +1,7 @@
 .contact{
     display: flex;
     flex-direction: column;
-    padding: 0 3em 0 3em;
+    padding: 0 3em 3em 3em;
         h2{
             @include reset();
             color: color("exclusive-blue");
