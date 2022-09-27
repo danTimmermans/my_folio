@@ -1,0 +1,45 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em 0 3em;
+        h2{
+            @include reset();
+            color: color("exclusive-blue");
+            margin-top: 1em;
+        }
+    .form{
+        input, textarea{
+            width: 100%;
+            @include padding("all", 1em);
+            color: color("exclusive-blue");
+            background-color: color("london-square");
+            border: none;
+            margin-top: 1em;
+            &::placeholder{
+                color: color("exclusive-blue");
+            }
+        }
+        .name{
+            @include display-grid();
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em;
+        }
+    }
+    .submit{
+        @include padding(top);
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+    button{
+        @include padding("all", 1em);
+        color: color("exclusive-blue");
+        background-color: color("london-square");
+        border: 1px solid color("exclusive-blue");
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: color("exclusive-blue");
+    }
+}
