@@ -17,10 +17,15 @@
             <!-- <svg>
                 <use xlink:href="sprite.svg#Web_Developer_Two_Color">
             </svg> -->
-            <div class="logo">
-                <a href="#">Daniel Timmermans</a>
+            <a href="index.html" class="logo">
+                <div class="logoHome">
+                    <p>Daniel Timmermans</p>
+                    <svg>
+                        <use xlink:href="sprite.svg#home">
+                    </svg>
+                </div>
                 <p>Junior front-end developer</p>
-            </div>
+            </a>
         </div>
         <div class="container-corner">
             <div class="circle-menu">
@@ -73,30 +78,34 @@
         </div>
     </header>
     <main>
-        <div class="contact">
-            <h2>Hello! Feel free to contact me</h2>
-            <div class="form">
-                <form   action="https://formspree.io/f/mzbwrqbe"
-                method="POST">
-                    <div class="name">
-                        <input type="text" id="firstname" name="user_firstname" placeholder="First name">
-                        <input type="text" id="secondname" name="user_secondname" placeholder="Second name">
-                    </div>
-                    <div class="mail">
-                        <input type="email" id="mail" name="user_mail" placeholder="Email adress">
-                    </div>
-                    <div>
-                        <textarea id="msg" name="user_message" placeholder="Your Message" rows="15"></textarea>
-                    </div>
-                    <div class="submit">
-                        <div class="button">
-                            <button type="submit">send request</button>
-                        </div>            
-                        <a href="pdf/danieltimmermans.pdf" >Download resume</a>
-                    </div>
-                </form>
+        <div class="contactContainer">
+            <div class="contact">
+                <h2>Hello! Feel free to contact me</h2>
+                <div class="form">
+                    <form   action="https://formspree.io/f/mzbwrqbe"
+                    method="POST">
+                        <div class="name">
+                            <input type="text" id="firstname" name="user_firstname" placeholder="First name">
+                            <input type="text" id="secondname" name="user_secondname" placeholder="Name">
+                        </div>
+                        <div class="mail">
+                            <input type="email" id="mail" name="user_mail" placeholder="Email adress">
+                        </div>
+                        <div>
+                            <textarea id="msg" name="user_message" placeholder="Your Message" rows="15"></textarea>
+                        </div>
+                        <div class="submit">
+                            <div class="button">
+                                <button type="submit">send request</button>
+                            </div>
+                            <a href="pdf/danieltimmermans.pdf" >Download resume</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>   
+            <div class="mailPic">
+            </div>
+        </div>  
     </main>
     <footer>
         <!-- <a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by Freepik - Flaticon</a> -->
