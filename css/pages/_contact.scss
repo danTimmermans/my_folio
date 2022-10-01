@@ -5,7 +5,7 @@
     animation-name: appears;
     animation-fill-mode: both;
     @include media-breakpoint-down("lg"){
-        margin-top: 3em;
+        margin-top: 2em;
     }
     @include media-breakpoint-up("lg"){
         margin-top: 3em;
