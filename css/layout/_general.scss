@@ -19,9 +19,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
 }
 main{
-    height: 100vh - $bodyHeight;
     display: flex;
     align-items: center;
+    @include media-breakpoint-up("lg"){
+        height: 100vh - $bodyHeight;
+    }
 }
 .mainContainer.space{
     gap: 3em;
