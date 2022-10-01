@@ -9,7 +9,7 @@ body{
         size: map-get($font-sizes , "md" );
     };
     background-image: url('../img/low-poly-grid-haikei (1).svg') ;
-    background-repeat: no-repeat;
+    background-repeat: round;
     background-size: 100%;
     // background-image: url('../img/low-poly-grid-haikei.svg') ;
     // background-repeat: no-repeat;
