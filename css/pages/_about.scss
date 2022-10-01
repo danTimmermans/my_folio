@@ -1,0 +1,73 @@
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em 0 1em;
+    p{
+        color: color("exclusive-blue");
+        line-height: 1.8em;
+    }
+}
+.orange.orangeTop{
+    transform: rotate(180deg);
+}
+.orange{
+    animation: 3s ease-in 1s  alternate both running OrangeTwist;
+    svg{
+        width: 50%;
+        height: 50%;
+    }
+    @keyframes OrangeTwist{
+        from{
+            opacity: 0;
+            // transform: rotate(180deg);
+        }
+        to{
+            opacity: 1;
+            // transform: rotate(-180deg);
+        }
+    }
+    #groupQuartier{
+        @include mytrans(1s)
+    }
+    #quartier1{
+        animation: 1.8s ease-in 1s  alternate both running OrangeSlide;
+        @keyframes OrangeSlide {
+            from{
+                transform: translate(+10%);
+                opacity: .3;
+            }
+            to {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+    }
+    #quartier2{
+        animation: 1.6s ease-in 1s  alternate both running OrangeSlide2;
+        @keyframes OrangeSlide2 {
+            from{
+                transform: translateY(+10%);
+                opacity: .3;
+            }
+            to{
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+    }
+    #quartier3{
+                animation: 1.4s ease-in 1s  alternate both running OrangeSlide3;
+        @keyframes OrangeSlide3 {
+            from{
+                transform: translate(-10%);
+                opacity: .3;
+            }
+            to {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+
+    }
+}

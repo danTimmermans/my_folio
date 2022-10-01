@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    width: 10%;
+    height: $footerHeight;
+    margin: 0 auto;
+    justify-content: center;
+    a{
+        @include padding();
+    }
+    svg{
+        fill: color("exclusive-blue");
+        width: 2em;
+        height: 2em;
+    }
+}
