@@ -31,7 +31,7 @@
         @include mytrans(1s)
     }
     #quartier1{
-        animation: 1.8s ease-in 1s  alternate both running OrangeSlide;
+        animation: 4.8s ease-in .8s  alternate both running OrangeSlide;
         @keyframes OrangeSlide {
             from{
                 transform: translate(+10%);
@@ -44,7 +44,7 @@
         }
     }
     #quartier2{
-        animation: 1.6s ease-in 1s  alternate both running OrangeSlide2;
+        animation: 4.6s ease-in 1.2s  alternate both running OrangeSlide2;
         @keyframes OrangeSlide2 {
             from{
                 transform: translateY(+10%);
@@ -57,7 +57,7 @@
         }
     }
     #quartier3{
-                animation: 1.4s ease-in 1s  alternate both running OrangeSlide3;
+                animation: 4.4s ease-in 1s  alternate both running OrangeSlide3;
         @keyframes OrangeSlide3 {
             from{
                 transform: translate(-10%);
