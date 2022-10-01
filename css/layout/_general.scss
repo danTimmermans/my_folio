@@ -138,6 +138,9 @@ main{
                             grid-template-columns:100px 200px;
                             align-items: end;
                             position: relative;
+                            span{
+                                font-size: 150px;
+                            }
                             #reativity{
                                 display: flex;
                                 p{
