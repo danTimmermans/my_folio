@@ -9,11 +9,17 @@ body{
         size: map-get($font-sizes , "md" );
     };
     background-image: url('../img/low-poly-grid-haikei (1).svg') ;
-    background-repeat: round;
+    background-repeat: no-repeat;
     background-size: 100%;
     // background-image: url('../img/low-poly-grid-haikei.svg') ;
     // background-repeat: no-repeat;
     // background-size: 100%;
+    @include media-breakpoint-down("sm"){
+        background-repeat: round;
+    }
+    @include media-breakpoint-up("md"){
+        background-repeat: no-repeat;
+    }
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
