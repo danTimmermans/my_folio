@@ -20,7 +20,7 @@ $colors: (
 // color: map-get($colors, "dark");
 $headerHeight: 18vh;
 $footerHeight: 10vh;
-$bodyHeight: $headerHeight + $footerHeight;
+$mainHeight: $headerHeight + $footerHeight;
 $default-font-size : 1rem;
 
 $font-sizes: (

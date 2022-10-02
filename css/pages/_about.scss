@@ -10,6 +10,53 @@
         color: color("exclusive-blue");
         line-height: 1.8em;
     }
+    @include media-breakpoint-up("md"){
+       background: url("../pics/blue.jpg")center/cover; 
+       width: 90%;
+       height: 100%;
+       position: relative;
+       margin: 0 auto;
+       margin-top: 3em;
+       margin-bottom: 3em;
+       &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background :rgba(29, 28, 28, 0.397);
+    }
+    .presentation{
+        @include padding();
+        position: relative;
+        z-index: 10000;
+    }
+    }
+    @include media-breakpoint-up("lg"){
+        background: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3em;
+        &::before{
+            display: none;
+        }
+        .aboutPic{
+            background: url("../pics/blue.jpg")center/cover;
+            width: 100%;
+            height: 90%;
+            position: relative;
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background :rgba(209, 48, 48, 0.137);
+            }
+        }
+    }
 }
 .orange.orangeTop{
     transform: rotate(180deg);
@@ -18,7 +65,15 @@
     animation: 3s ease-in 1s  alternate both running OrangeTwist;
     svg{
         width: 50%;
-        height: 50%;
+        height: 80px;
+        @include media-breakpoint-up("xl"){
+            width: 50%;
+            height: 120px;
+        }
+        @include media-breakpoint-up("xxl"){
+            width: 50%;
+            height: 140px;
+        }
     }
     @keyframes OrangeTwist{
         from{
@@ -71,6 +126,5 @@
                 opacity: 1;
             }
         }
-
     }
 }

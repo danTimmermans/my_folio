@@ -15,7 +15,7 @@ body{
     // background-repeat: no-repeat;
     // background-size: 100%;
     @include media-breakpoint-down("sm"){
-        background-repeat: round;
+        background-repeat: repeat;
     }
     @include media-breakpoint-up("md"){
         background-repeat: no-repeat;
@@ -28,7 +28,7 @@ main{
     display: flex;
     align-items: center;
     @include media-breakpoint-up("lg"){
-        height: 100vh - $bodyHeight;
+        height: 100vh - $mainHeight;
     }
 }
 .mainContainer.space{
@@ -104,16 +104,20 @@ main{
                             }
                         }
                     } 
-                    @include media-breakpoint-up("lg"){
+                    @include media-breakpoint-up("md"){
                         .aboutMe{
                             p{
                                 position: absolute;
                                 bottom: 0;
                                 right: 0;
-                                font-size: map-get($font-sizes , "lg" );;
+                                font-size: map-get($font-sizes , "md" );
+                                @include media-breakpoint-up("lg"){
+                                    font-size: map-get($font-sizes , "lg" );
+                                }      
                             }
                         }
-                    }       
+                    } 
+
                 }
                 // @include media-breakpoint-up("xl"){
                     //     padding:  5em 5em 0 5em;
