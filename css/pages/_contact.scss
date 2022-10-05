@@ -72,13 +72,6 @@
         text-decoration: none;
         color: color("exclusive-blue");
     }
-    // @include media-breakpoint-up("md"){
-    //     .name{
-    //         @include display-grid();
-    //         grid-template-columns: repeat(2, 1fr);
-    //         gap: 1em;
-    //     }
-    // }
     @include media-breakpoint-up("lg"){
         h2{
             margin-top: 0;
