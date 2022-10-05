@@ -37,15 +37,19 @@
         }
         .projects-info{
             background-color: rgba(255,255,255,0.239);
-            @include padding();
+            @include padding(all, .8em);
             position: relative;
             z-index: 10000;
             h2, p{
                 text-align: center;
                 color: color("black-pearl");
             }
+            h2{
+                margin: .3em 0 .3em 0;
+            }
             p{
                 font-weight: bold;
+                margin: .5em 0 .5em 0;
             }
         }
         }
