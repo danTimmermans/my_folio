@@ -35,6 +35,11 @@
                     height: 15px;
                    margin-left: 1em;
                 }
+                @include media-breakpoint-down("md"){
+                    svg{
+                        display: none;
+                    }
+                }
             }
         }
         a, p{

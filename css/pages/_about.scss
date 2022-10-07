@@ -7,7 +7,6 @@
     animation-name: appears;
     animation-fill-mode: both;
     p{
-        color: color("exclusive-blue");
         line-height: 1.8em;
     }
     @include media-breakpoint-up("md"){
