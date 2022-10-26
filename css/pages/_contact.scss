@@ -4,6 +4,7 @@
     animation-duration: 2s;
     animation-name: appears;
     animation-fill-mode: both;
+    margin-bottom: 3em;
     @include media-breakpoint-down("lg"){
         margin-top: 1em;
     }

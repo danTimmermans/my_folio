@@ -18,9 +18,9 @@ $colors: (
     "sunset-orange": #ff5e57,
 );
 // color: map-get($colors, "dark");
-$headerHeight: 18vh;
-$footerHeight: 10vh;
-$mainHeight: $headerHeight + $footerHeight;
+
+$footerHeight: 20vh;
+
 
 $default-font-size : 1rem;
 

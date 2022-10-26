@@ -5,14 +5,18 @@
     width: 90%;
     margin:  0em auto;
     position: relative;
+    margin-top: 3em;
+    @include media-breakpoint-up("xl"){
+        margin-top: 8em;
+    }
+    @include media-breakpoint-up("xxl"){
+        margin-top: 10em;
+    }
     .aboutMe{
         p{
             font-size: map-get($font-sizes , "xs" );
             text-align: center;
         }
-    }
-    @include media-breakpoint-down("lg"){
-        margin-top: 3em;
     }
     @include media-breakpoint-up("md"){
         .fence {

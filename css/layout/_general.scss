@@ -27,7 +27,4 @@ main{
     p{
         color: color("exclusive-blue");
     }
-    @include media-breakpoint-up("lg"){
-        height: 100vh - $mainHeight;
-    }
 }
