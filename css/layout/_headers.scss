@@ -185,7 +185,5 @@
     }
 }
 .container-corner.container-corner-project{
-    @include media-breakpoint-up("lg"){
     top: 20px;
-}
 }
